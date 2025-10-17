@@ -2,23 +2,6 @@
   "name": "gp8000-restaurant-system",
   "version": "2.0.0",
   "description": "Restaurant Recommendation & Business Analytics System",
-  "type": "module",
-  "scripts": {
-    "dev": "vercel dev",
-    "build": "echo 'Static site - no build needed'",
-    "start": "vercel dev"
-  },
-  "keywords": [
-    "restaurant",
-    "recommendation",
-    "analytics",
-    "ai",
-    "telegram-bot"
-  ],
-  "author": "",
-  "license": "MIT",
-  "engines": {
-    "node": ">=18.x"
-  }
+  "private": true
 }
 

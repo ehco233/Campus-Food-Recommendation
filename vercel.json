@@ -1,19 +1,10 @@
 {
-  "version": 2,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "framework": null,
   "functions": {
     "api/deepseek.js": {
-      "runtime": "@vercel/node@3.0.7"
+      "runtime": "nodejs18.x"
     }
-  },
-  "routes": [
-    {
-      "src": "/api/deepseek",
-      "dest": "/api/deepseek.js",
-      "methods": ["POST", "OPTIONS"]
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  }
 }
