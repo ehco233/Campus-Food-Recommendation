@@ -1,10 +1,5 @@
 {
   "buildCommand": null,
   "devCommand": null,
-  "installCommand": "echo 'No install needed for static files'",
-  "functions": {
-    "api/deepseek.js": {
-      "runtime": "@vercel/node@3.0.7"
-    }
-  }
+  "installCommand": "echo 'No install needed for static files'"
 }
