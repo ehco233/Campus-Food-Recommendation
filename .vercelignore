@@ -1,0 +1,14 @@
+# Python files
+*.pyc
+__pycache__/
+*.py
+
+# Environment files
+.env
+config.py
+
+# Other
+.DS_Store
+node_modules/
+temp_data.csv
+

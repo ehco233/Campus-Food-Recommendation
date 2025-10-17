@@ -1,0 +1,1847 @@
+[
+  {
+    "name": {
+      "zh": "Pen & Inc",
+      "en": "Pen & Inc"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Western",
+      "en": "Western"
+    },
+    "price_range": "23-30",
+    "avg_price": 25.9,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Western，位于North Spine Plaza",
+      "en": "Western, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Peri Peri Chicken, Beef Bolognese, Wagyu Burger",
+      "en": "Peri Peri Chicken, Beef Bolognese, Wagyu Burger"
+    },
+    "all_menus": [
+      "Peri Peri Chicken",
+      "Wagyu Burger",
+      "Beef Bolognese"
+    ]
+  },
+  {
+    "name": {
+      "zh": "The Crowded Bowl Salad",
+      "en": "The Crowded Bowl Salad"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Vegetarian",
+      "en": "Vegetarian"
+    },
+    "price_range": "4-4",
+    "avg_price": 4.9,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Vegetarian，位于North Spine Plaza",
+      "en": "Vegetarian, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Regular Salad",
+      "en": "Regular Salad"
+    },
+    "all_menus": [
+      "Regular Salad"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Each a Cup",
+      "en": "Each a Cup"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Beverages",
+      "en": "Beverages"
+    },
+    "price_range": "3-4",
+    "avg_price": 3.3,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Beverages，位于North Spine Plaza",
+      "en": "Beverages, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Milk Tea, Oreo Crush, Brown Sugar Jasmine Milk Tea",
+      "en": "Milk Tea, Oreo Crush, Brown Sugar Jasmine Milk Tea"
+    },
+    "all_menus": [
+      "Milk Tea",
+      "Brown Sugar Jasmine Milk Tea",
+      "Oreo Crush"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Paiks Bibim",
+      "en": "Paiks Bibim"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Korean",
+      "en": "Korean"
+    },
+    "price_range": "9-10",
+    "avg_price": 10.6,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Korean，位于North Spine Plaza",
+      "en": "Korean, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Spam Mayo Over Rice, Beef Bulgogi Bibimbap, Tofu Soup",
+      "en": "Spam Mayo Over Rice, Beef Bulgogi Bibimbap, Tofu Soup"
+    },
+    "all_menus": [
+      "Beef Bulgogi Bibimbap",
+      "Tofu Soup",
+      "Spam Mayo Over Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Pasta Express",
+      "en": "Pasta Express"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Western",
+      "en": "Western"
+    },
+    "price_range": "7-7",
+    "avg_price": 7.2,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Western，位于North Spine Plaza",
+      "en": "Western, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Carbonara, Bolognese, Chicken Alfredo",
+      "en": "Carbonara, Bolognese, Chicken Alfredo"
+    },
+    "all_menus": [
+      "Carbonara",
+      "Bolognese",
+      "Chicken Alfredo"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Subway",
+      "en": "Subway"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Fast Food",
+      "en": "Fast Food"
+    },
+    "price_range": "6-7",
+    "avg_price": 6.9,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Fast Food，位于North Spine Plaza",
+      "en": "Fast Food, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Veggie Delite Sub, Egg Salad Sub, Tuna Sub",
+      "en": "Veggie Delite Sub, Egg Salad Sub, Tuna Sub"
+    },
+    "all_menus": [
+      "Veggie Delite Sub",
+      "Egg Salad Sub",
+      "Tuna Sub"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Blue Ocean Kopi & Toast",
+      "en": "Blue Ocean Kopi & Toast"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "5-6",
+    "avg_price": 6.0,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于North Spine Plaza",
+      "en": "Local Cuisine, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Yong Tau Foo Set, Curry Chicken Set, White Rice with Cereal Chicken",
+      "en": "Yong Tau Foo Set, Curry Chicken Set, White Rice with Cereal Chicken"
+    },
+    "all_menus": [
+      "White Rice with Cereal Chicken",
+      "Yong Tau Foo Set",
+      "Curry Chicken Set"
+    ]
+  },
+  {
+    "name": {
+      "zh": "QQ Rice",
+      "en": "QQ Rice"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "4-7",
+    "avg_price": 6.1,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于North Spine Plaza",
+      "en": "Local Cuisine, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Healthy Porridge, Smoked Duck Rice Roll, California Chicken Stew",
+      "en": "Healthy Porridge, Smoked Duck Rice Roll, California Chicken Stew"
+    },
+    "all_menus": [
+      "Healthy Porridge",
+      "Smoked Duck Rice Roll",
+      "California Chicken Stew"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Nine Fresh",
+      "en": "Nine Fresh"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Beverages",
+      "en": "Beverages"
+    },
+    "price_range": "2-3",
+    "avg_price": 3.1,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Beverages，位于North Spine Plaza",
+      "en": "Beverages, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Four Seasons Oolong, Grass Jelly Special, Earl Grey Milk Tea",
+      "en": "Four Seasons Oolong, Grass Jelly Special, Earl Grey Milk Tea"
+    },
+    "all_menus": [
+      "Four Seasons Oolong",
+      "Earl Grey Milk Tea",
+      "Grass Jelly Special"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Thai Dynasty Express",
+      "en": "Thai Dynasty Express"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Thai",
+      "en": "Thai"
+    },
+    "price_range": "5-6",
+    "avg_price": 5.7,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Thai，位于North Spine Plaza",
+      "en": "Thai, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Basil Tofu with Rice, Tom Yum Soup, Pad Thai",
+      "en": "Basil Tofu with Rice, Tom Yum Soup, Pad Thai"
+    },
+    "all_menus": [
+      "Tom Yum Soup",
+      "Pad Thai",
+      "Basil Tofu with Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Bismillah Biryani Indian",
+      "en": "Bismillah Biryani Indian"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Indian",
+      "en": "Indian"
+    },
+    "price_range": "7-12",
+    "avg_price": 9.3,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Indian，位于North Spine Plaza",
+      "en": "Indian, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Chicken Dum Biryani, Moong Dhal, Yong Mutton Dum Biryani",
+      "en": "Chicken Dum Biryani, Moong Dhal, Yong Mutton Dum Biryani"
+    },
+    "all_menus": [
+      "Chicken Dum Biryani",
+      "Yong Mutton Dum Biryani",
+      "Moong Dhal"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Popeyes",
+      "en": "Popeyes"
+    },
+    "location": {
+      "zh": "North Spine Plaza",
+      "en": "North Spine Plaza"
+    },
+    "cuisine": {
+      "zh": "Fast Food",
+      "en": "Fast Food"
+    },
+    "price_range": "6-11",
+    "avg_price": 9.3,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Fast Food，位于North Spine Plaza",
+      "en": "Fast Food, located at North Spine Plaza"
+    },
+    "recommended_dishes": {
+      "zh": "Mac Attack Bowl, D'lite Chicken Sandwich, Chicken Combo",
+      "en": "Mac Attack Bowl, D'lite Chicken Sandwich, Chicken Combo"
+    },
+    "all_menus": [
+      "Chicken Combo",
+      "D'lite Chicken Sandwich",
+      "Mac Attack Bowl"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Xu's Mixed Rice",
+      "en": "Xu's Mixed Rice"
+    },
+    "location": {
+      "zh": "Quad Café",
+      "en": "Quad Café"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "5-6",
+    "avg_price": 5.7,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Quad Café",
+      "en": "Chinese, located at Quad Café"
+    },
+    "recommended_dishes": {
+      "zh": "Dumplings, Beef Noodle, 3 Dishes with Rice",
+      "en": "Dumplings, Beef Noodle, 3 Dishes with Rice"
+    },
+    "all_menus": [
+      "Dumplings",
+      "Beef Noodle",
+      "3 Dishes with Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Xu's Fried Yong Tau Foo",
+      "en": "Xu's Fried Yong Tau Foo"
+    },
+    "location": {
+      "zh": "Quad Café",
+      "en": "Quad Café"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "4-6",
+    "avg_price": 5.5,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Quad Café",
+      "en": "Local Cuisine, located at Quad Café"
+    },
+    "recommended_dishes": {
+      "zh": "Set Meal, Seafood Fried Rice, Set Meal (MALA)",
+      "en": "Set Meal, Seafood Fried Rice, Set Meal (MALA)"
+    },
+    "all_menus": [
+      "Set Meal",
+      "Seafood Fried Rice",
+      "Set Meal (MALA)"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Vietnamese Cuisine",
+      "en": "Vietnamese Cuisine"
+    },
+    "location": {
+      "zh": "Quad Café",
+      "en": "Quad Café"
+    },
+    "cuisine": {
+      "zh": "Vietnamese",
+      "en": "Vietnamese"
+    },
+    "price_range": "5-5",
+    "avg_price": 5.3,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Vietnamese，位于Quad Café",
+      "en": "Vietnamese, located at Quad Café"
+    },
+    "recommended_dishes": {
+      "zh": "Claypot Chicken, Beef Kway Teow, Grilled Meat Noodle",
+      "en": "Claypot Chicken, Beef Kway Teow, Grilled Meat Noodle"
+    },
+    "all_menus": [
+      "Claypot Chicken",
+      "Beef Kway Teow",
+      "Grilled Meat Noodle"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Joy Kitchen Miniwok",
+      "en": "Joy Kitchen Miniwok"
+    },
+    "location": {
+      "zh": "Quad Café",
+      "en": "Quad Café"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "4-6",
+    "avg_price": 5.9,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Quad Café",
+      "en": "Chinese, located at Quad Café"
+    },
+    "recommended_dishes": {
+      "zh": "Beef Fried Rice, Black Papper Beef, Bean Curd Beef",
+      "en": "Beef Fried Rice, Black Papper Beef, Bean Curd Beef"
+    },
+    "all_menus": [
+      "Beef Fried Rice",
+      "Black Papper Beef",
+      "Bean Curd Beef"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Xu's Chicken Rice",
+      "en": "Xu's Chicken Rice"
+    },
+    "location": {
+      "zh": "Quad Café",
+      "en": "Quad Café"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "4-6",
+    "avg_price": 5.2,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Quad Café",
+      "en": "Local Cuisine, located at Quad Café"
+    },
+    "recommended_dishes": {
+      "zh": "Chicken Chop Rice, Chicken Rice Set, White Chicken + Roasted Chicken",
+      "en": "Chicken Chop Rice, Chicken Rice Set, White Chicken + Roasted Chicken"
+    },
+    "all_menus": [
+      "Chicken Rice Set",
+      "White Chicken + Roasted Chicken",
+      "Chicken Chop Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Drinks and Beverage",
+      "en": "Drinks and Beverage"
+    },
+    "location": {
+      "zh": "Quad Café",
+      "en": "Quad Café"
+    },
+    "cuisine": {
+      "zh": "Beverages",
+      "en": "Beverages"
+    },
+    "price_range": "0-3",
+    "avg_price": 1.7,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Beverages，位于Quad Café",
+      "en": "Beverages, located at Quad Café"
+    },
+    "recommended_dishes": {
+      "zh": "Coffee O, Milo, Toast Set",
+      "en": "Coffee O, Milo, Toast Set"
+    },
+    "all_menus": [
+      "Milo",
+      "Toast Set",
+      "Coffee O"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Connect 71 Café",
+      "en": "Connect 71 Café"
+    },
+    "location": {
+      "zh": "NTUITIVE",
+      "en": "NTUITIVE"
+    },
+    "cuisine": {
+      "zh": "Japanese",
+      "en": "Japanese"
+    },
+    "price_range": "7-10",
+    "avg_price": 8.7,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Japanese，位于NTUITIVE",
+      "en": "Japanese, located at NTUITIVE"
+    },
+    "recommended_dishes": {
+      "zh": "Mazesoba, Yakitori Don, Gyudon",
+      "en": "Mazesoba, Yakitori Don, Gyudon"
+    },
+    "all_menus": [
+      "Gyudon",
+      "Yakitori Don",
+      "Mazesoba"
+    ]
+  },
+  {
+    "name": {
+      "zh": "HorhorChi Chinese Crepes",
+      "en": "HorhorChi Chinese Crepes"
+    },
+    "location": {
+      "zh": "Cateen 4",
+      "en": "Cateen 4"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "4-5",
+    "avg_price": 4.9,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Cateen 4",
+      "en": "Chinese, located at Cateen 4"
+    },
+    "recommended_dishes": {
+      "zh": "Vegetarian Choice, Classic Meat Floss, Ham + Meat Floss",
+      "en": "Vegetarian Choice, Classic Meat Floss, Ham + Meat Floss"
+    },
+    "all_menus": [
+      "Ham + Meat Floss",
+      "Vegetarian Choice",
+      "Classic Meat Floss"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Can 4 Mini Hotpot",
+      "en": "Can 4 Mini Hotpot"
+    },
+    "location": {
+      "zh": "Cateen 4",
+      "en": "Cateen 4"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "1-4",
+    "avg_price": 3.6,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Cateen 4",
+      "en": "Local Cuisine, located at Cateen 4"
+    },
+    "recommended_dishes": {
+      "zh": "Spicy Soup Base, Lamb Roll, Vegetable Platter",
+      "en": "Spicy Soup Base, Lamb Roll, Vegetable Platter"
+    },
+    "all_menus": [
+      "Spicy Soup Base",
+      "Lamb Roll",
+      "Vegetable Platter"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Zhongmin Noodles",
+      "en": "Zhongmin Noodles"
+    },
+    "location": {
+      "zh": "Cateen 4",
+      "en": "Cateen 4"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "2-6",
+    "avg_price": 3.8,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Cateen 4",
+      "en": "Chinese, located at Cateen 4"
+    },
+    "recommended_dishes": {
+      "zh": "Sauced Cake, Pie, Cabbage Dumplings",
+      "en": "Sauced Cake, Pie, Cabbage Dumplings"
+    },
+    "all_menus": [
+      "Pie",
+      "Cabbage Dumplings",
+      "Sauced Cake"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Koka Noodles",
+      "en": "Koka Noodles"
+    },
+    "location": {
+      "zh": "Cateen 16",
+      "en": "Cateen 16"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "4-6",
+    "avg_price": 5.6,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Cateen 16",
+      "en": "Local Cuisine, located at Cateen 16"
+    },
+    "recommended_dishes": {
+      "zh": "Pork with Egg, Spcicy Pork, Seafood",
+      "en": "Pork with Egg, Spcicy Pork, Seafood"
+    },
+    "all_menus": [
+      "Pork with Egg",
+      "Seafood",
+      "Spcicy Pork"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Mala Xiangguo",
+      "en": "Mala Xiangguo"
+    },
+    "location": {
+      "zh": "Cateen 16",
+      "en": "Cateen 16"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "5-6",
+    "avg_price": 6.1,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Cateen 16",
+      "en": "Chinese, located at Cateen 16"
+    },
+    "recommended_dishes": {
+      "zh": "Kunckle Rice, Fried Rice, Pan-fried Dumpling",
+      "en": "Kunckle Rice, Fried Rice, Pan-fried Dumpling"
+    },
+    "all_menus": [
+      "Pan-fried Dumpling",
+      "Kunckle Rice",
+      "Fried Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Grillverse Western",
+      "en": "Grillverse Western"
+    },
+    "location": {
+      "zh": "Cateen 16",
+      "en": "Cateen 16"
+    },
+    "cuisine": {
+      "zh": "Western",
+      "en": "Western"
+    },
+    "price_range": "6-7",
+    "avg_price": 7.1,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Western，位于Cateen 16",
+      "en": "Western, located at Cateen 16"
+    },
+    "recommended_dishes": {
+      "zh": "Grilled Chicken Chop, Fish and Chips, Pork Chop",
+      "en": "Grilled Chicken Chop, Fish and Chips, Pork Chop"
+    },
+    "all_menus": [
+      "Grilled Chicken Chop",
+      "Pork Chop",
+      "Fish and Chips"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Better Lunch",
+      "en": "Better Lunch"
+    },
+    "location": {
+      "zh": "Cateen 16",
+      "en": "Cateen 16"
+    },
+    "cuisine": {
+      "zh": "Japanese",
+      "en": "Japanese"
+    },
+    "price_range": "5-6",
+    "avg_price": 6.2,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Japanese，位于Cateen 16",
+      "en": "Japanese, located at Cateen 16"
+    },
+    "recommended_dishes": {
+      "zh": "Chicken Pepper Rice, Fish Pepper Rice, Beef Pepper Rice",
+      "en": "Chicken Pepper Rice, Fish Pepper Rice, Beef Pepper Rice"
+    },
+    "all_menus": [
+      "Chicken Pepper Rice",
+      "Beef Pepper Rice",
+      "Fish Pepper Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Heyya Braised Duck",
+      "en": "Heyya Braised Duck"
+    },
+    "location": {
+      "zh": "Cateen 16",
+      "en": "Cateen 16"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "4-6",
+    "avg_price": 5.2,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Cateen 16",
+      "en": "Local Cuisine, located at Cateen 16"
+    },
+    "recommended_dishes": {
+      "zh": "Duck Rice, Pork Belly Rice, Kway Chap Set",
+      "en": "Duck Rice, Pork Belly Rice, Kway Chap Set"
+    },
+    "all_menus": [
+      "Kway Chap Set",
+      "Duck Rice",
+      "Pork Belly Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "CO-OP Café",
+      "en": "CO-OP Café"
+    },
+    "location": {
+      "zh": "The Hive",
+      "en": "The Hive"
+    },
+    "cuisine": {
+      "zh": "Western",
+      "en": "Western"
+    },
+    "price_range": "5-7",
+    "avg_price": 6.4,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Western，位于The Hive",
+      "en": "Western, located at The Hive"
+    },
+    "recommended_dishes": {
+      "zh": "Strawberry Matcha, Aglio Olio, Grilled Chicken Chop",
+      "en": "Strawberry Matcha, Aglio Olio, Grilled Chicken Chop"
+    },
+    "all_menus": [
+      "Strawberry Matcha",
+      "Aglio Olio",
+      "Grilled Chicken Chop"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Snail Rice Noodle",
+      "en": "Snail Rice Noodle"
+    },
+    "location": {
+      "zh": "South Spine Fine Food",
+      "en": "South Spine Fine Food"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "5-5",
+    "avg_price": 5.8,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于South Spine Fine Food",
+      "en": "Chinese, located at South Spine Fine Food"
+    },
+    "recommended_dishes": {
+      "zh": "Snail Rice Noodle",
+      "en": "Snail Rice Noodle"
+    },
+    "all_menus": [
+      "Snail Rice Noodle"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Xiao Long Bao",
+      "en": "Xiao Long Bao"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "4-5",
+    "avg_price": 5.0,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Canteen 2",
+      "en": "Chinese, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Xiao Long Bao, Dumplings, Beef Noodle",
+      "en": "Xiao Long Bao, Dumplings, Beef Noodle"
+    },
+    "all_menus": [
+      "Xiao Long Bao",
+      "Dumplings",
+      "Beef Noodle"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Route 35 Western Food",
+      "en": "Route 35 Western Food"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Western",
+      "en": "Western"
+    },
+    "price_range": "5-5",
+    "avg_price": 5.5,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Western，位于Canteen 2",
+      "en": "Western, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Chicken Chop, Cheesy Chicken Cutlet, Big Fat Sausage",
+      "en": "Chicken Chop, Cheesy Chicken Cutlet, Big Fat Sausage"
+    },
+    "all_menus": [
+      "Chicken Chop",
+      "Cheesy Chicken Cutlet",
+      "Big Fat Sausage"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Chicken Rice",
+      "en": "Chicken Rice"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "5-5",
+    "avg_price": 5.5,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Canteen 2",
+      "en": "Local Cuisine, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Roasted Chicken Rice, Fried Chicken Set, Char Siew Rice",
+      "en": "Roasted Chicken Rice, Fried Chicken Set, Char Siew Rice"
+    },
+    "all_menus": [
+      "Roasted Chicken Rice",
+      "Fried Chicken Set",
+      "Char Siew Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Korean & Japanese Cuisine",
+      "en": "Korean & Japanese Cuisine"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Korean",
+      "en": "Korean"
+    },
+    "price_range": "5-6",
+    "avg_price": 5.8,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Korean，位于Canteen 2",
+      "en": "Korean, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Chicken Mayo Bibimbap, Kimchi Rice, Hotplate Beef Set",
+      "en": "Chicken Mayo Bibimbap, Kimchi Rice, Hotplate Beef Set"
+    },
+    "all_menus": [
+      "Hotplate Beef Set",
+      "Chicken Mayo Bibimbap",
+      "Kimchi Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Yi Huat MiniWok",
+      "en": "Yi Huat MiniWok"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "4-5",
+    "avg_price": 5.2,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Canteen 2",
+      "en": "Chinese, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Yang Zhou Fried Rice, Chicken Fried Rice, Seafood Fried Rice",
+      "en": "Yang Zhou Fried Rice, Chicken Fried Rice, Seafood Fried Rice"
+    },
+    "all_menus": [
+      "Yang Zhou Fried Rice",
+      "Chicken Fried Rice",
+      "Seafood Fried Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Thai Food",
+      "en": "Thai Food"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Thai",
+      "en": "Thai"
+    },
+    "price_range": "4-5",
+    "avg_price": 5.0,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Thai，位于Canteen 2",
+      "en": "Thai, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Pineapple Fried Rice, Basil Leaf chicken, Chicken Cutlet Rice",
+      "en": "Pineapple Fried Rice, Basil Leaf chicken, Chicken Cutlet Rice"
+    },
+    "all_menus": [
+      "Basil Leaf chicken",
+      "Pineapple Fried Rice",
+      "Chicken Cutlet Rice"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Yi Lixuan",
+      "en": "Yi Lixuan"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "3-24",
+    "avg_price": 11.0,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Canteen 2",
+      "en": "Local Cuisine, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Egg Fried Rice, Stir Pork, Grilled Fish",
+      "en": "Egg Fried Rice, Stir Pork, Grilled Fish"
+    },
+    "all_menus": [
+      "Grilled Fish",
+      "Egg Fried Rice",
+      "Stir Pork"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Abang Dol's",
+      "en": "Abang Dol's"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "1-5",
+    "avg_price": 4.3,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Canteen 2",
+      "en": "Local Cuisine, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Potato Curry, Breakfast Platter, Pasta",
+      "en": "Potato Curry, Breakfast Platter, Pasta"
+    },
+    "all_menus": [
+      "Breakfast Platter",
+      "Potato Curry",
+      "Pasta"
+    ]
+  },
+  {
+    "name": {
+      "zh": "NiangStation",
+      "en": "NiangStation"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "3-5",
+    "avg_price": 4.5,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Canteen 2",
+      "en": "Local Cuisine, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Fish Ball Noodle, 5 pcs Yong Tau Foo",
+      "en": "Fish Ball Noodle, 5 pcs Yong Tau Foo"
+    },
+    "all_menus": [
+      "5 pcs Yong Tau Foo",
+      "Fish Ball Noodle"
+    ]
+  },
+  {
+    "name": {
+      "zh": "333 Pasta",
+      "en": "333 Pasta"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Western",
+      "en": "Western"
+    },
+    "price_range": "3-3",
+    "avg_price": 3.1,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Western，位于Canteen 2",
+      "en": "Western, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Tomato Spaghetti",
+      "en": "Tomato Spaghetti"
+    },
+    "all_menus": [
+      "Tomato Spaghetti"
+    ]
+  },
+  {
+    "name": {
+      "zh": "334 Pasta",
+      "en": "334 Pasta"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Western",
+      "en": "Western"
+    },
+    "price_range": "3-3",
+    "avg_price": 3.1,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Western，位于Canteen 2",
+      "en": "Western, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Crème Spaghetti",
+      "en": "Crème Spaghetti"
+    },
+    "all_menus": [
+      "Crème Spaghetti"
+    ]
+  },
+  {
+    "name": {
+      "zh": "335 Pasta",
+      "en": "335 Pasta"
+    },
+    "location": {
+      "zh": "Canteen 2",
+      "en": "Canteen 2"
+    },
+    "cuisine": {
+      "zh": "Western",
+      "en": "Western"
+    },
+    "price_range": "3-3",
+    "avg_price": 3.1,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Western，位于Canteen 2",
+      "en": "Western, located at Canteen 2"
+    },
+    "recommended_dishes": {
+      "zh": "Aglio Olio",
+      "en": "Aglio Olio"
+    },
+    "all_menus": [
+      "Aglio Olio"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Jia Xiu Wei Dao",
+      "en": "Jia Xiu Wei Dao"
+    },
+    "location": {
+      "zh": "Canteen 1",
+      "en": "Canteen 1"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "5-6",
+    "avg_price": 6.4,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Canteen 1",
+      "en": "Chinese, located at Canteen 1"
+    },
+    "recommended_dishes": {
+      "zh": "Chicken Noodle, Beef Noodle, Lamb Noodle",
+      "en": "Chicken Noodle, Beef Noodle, Lamb Noodle"
+    },
+    "all_menus": [
+      "Chicken Noodle",
+      "Beef Noodle",
+      "Lamb Noodle"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Ban Mian",
+      "en": "Ban Mian"
+    },
+    "location": {
+      "zh": "Canteen 14",
+      "en": "Canteen 14"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "3-5",
+    "avg_price": 4.3,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Canteen 14",
+      "en": "Local Cuisine, located at Canteen 14"
+    },
+    "recommended_dishes": {
+      "zh": "Dry Ramem, Dumpling Noodle, Tom Yum Soup",
+      "en": "Dry Ramem, Dumpling Noodle, Tom Yum Soup"
+    },
+    "all_menus": [
+      "Tom Yum Soup",
+      "Dry Ramem",
+      "Dumpling Noodle"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Chicken Rice",
+      "en": "Chicken Rice"
+    },
+    "location": {
+      "zh": "Canteen 14",
+      "en": "Canteen 14"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "4-6",
+    "avg_price": 5.3,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Canteen 14",
+      "en": "Local Cuisine, located at Canteen 14"
+    },
+    "recommended_dishes": {
+      "zh": "White Chicken Rice, Chicken Hor Fun, 1 Pax Chicken Set",
+      "en": "White Chicken Rice, Chicken Hor Fun, 1 Pax Chicken Set"
+    },
+    "all_menus": [
+      "1 Pax Chicken Set",
+      "White Chicken Rice",
+      "Chicken Hor Fun"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Lan Lamian",
+      "en": "Lan Lamian"
+    },
+    "location": {
+      "zh": "Canteen 9",
+      "en": "Canteen 9"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "6-7",
+    "avg_price": 7.2,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Canteen 9",
+      "en": "Chinese, located at Canteen 9"
+    },
+    "recommended_dishes": {
+      "zh": "Scallion Oil Lamian, Lanzhou Cold Noodle, Beef Lamian",
+      "en": "Scallion Oil Lamian, Lanzhou Cold Noodle, Beef Lamian"
+    },
+    "all_menus": [
+      "Lanzhou Cold Noodle",
+      "Beef Lamian",
+      "Scallion Oil Lamian"
+    ]
+  },
+  {
+    "name": {
+      "zh": "XinJiang Cuisine",
+      "en": "XinJiang Cuisine"
+    },
+    "location": {
+      "zh": "Canteen 9",
+      "en": "Canteen 9"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "3-9",
+    "avg_price": 7.2,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Canteen 9",
+      "en": "Chinese, located at Canteen 9"
+    },
+    "recommended_dishes": {
+      "zh": "Grill Lamb Skewer, Dapan Chicken, Grill Beef Skewer",
+      "en": "Grill Lamb Skewer, Dapan Chicken, Grill Beef Skewer"
+    },
+    "all_menus": [
+      "Grill Lamb Skewer",
+      "Dapan Chicken",
+      "Grill Beef Skewer"
+    ]
+  },
+  {
+    "name": {
+      "zh": "KCLOVE Fusion Bowls",
+      "en": "KCLOVE Fusion Bowls"
+    },
+    "location": {
+      "zh": "Pioneer Hall Canteen",
+      "en": "Pioneer Hall Canteen"
+    },
+    "cuisine": {
+      "zh": "Korean",
+      "en": "Korean"
+    },
+    "price_range": "5-6",
+    "avg_price": 5.9,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Korean，位于Pioneer Hall Canteen",
+      "en": "Korean, located at Pioneer Hall Canteen"
+    },
+    "recommended_dishes": {
+      "zh": "Tofu Soup, BBQ Chicken Bowl, Bulgogi Beef",
+      "en": "Tofu Soup, BBQ Chicken Bowl, Bulgogi Beef"
+    },
+    "all_menus": [
+      "BBQ Chicken Bowl",
+      "Tofu Soup",
+      "Bulgogi Beef"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Make Your Sunday Thai",
+      "en": "Make Your Sunday Thai"
+    },
+    "location": {
+      "zh": "Pioneer Hall Canteen",
+      "en": "Pioneer Hall Canteen"
+    },
+    "cuisine": {
+      "zh": "Thai",
+      "en": "Thai"
+    },
+    "price_range": "5-5",
+    "avg_price": 5.6,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Thai，位于Pioneer Hall Canteen",
+      "en": "Thai, located at Pioneer Hall Canteen"
+    },
+    "recommended_dishes": {
+      "zh": "Fried Koay Teow, White Bee Hoon, Mango Rice",
+      "en": "Fried Koay Teow, White Bee Hoon, Mango Rice"
+    },
+    "all_menus": [
+      "Mango Rice",
+      "Fried Koay Teow",
+      "White Bee Hoon"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Healthy Salad",
+      "en": "Healthy Salad"
+    },
+    "location": {
+      "zh": "Pioneer Hall Canteen",
+      "en": "Pioneer Hall Canteen"
+    },
+    "cuisine": {
+      "zh": "Western",
+      "en": "Western"
+    },
+    "price_range": "4-5",
+    "avg_price": 5.1,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Western，位于Pioneer Hall Canteen",
+      "en": "Western, located at Pioneer Hall Canteen"
+    },
+    "recommended_dishes": {
+      "zh": "Basic Salad, Chicken Combo, Deluxe Salad",
+      "en": "Basic Salad, Chicken Combo, Deluxe Salad"
+    },
+    "all_menus": [
+      "Basic Salad",
+      "Deluxe Salad",
+      "Chicken Combo"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Shi Ding Ji Ban Mian Fish Soup",
+      "en": "Shi Ding Ji Ban Mian Fish Soup"
+    },
+    "location": {
+      "zh": "Pioneer Hall Canteen",
+      "en": "Pioneer Hall Canteen"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "3-4",
+    "avg_price": 4.1,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Pioneer Hall Canteen",
+      "en": "Local Cuisine, located at Pioneer Hall Canteen"
+    },
+    "recommended_dishes": {
+      "zh": "Ban Mee, Dry Noodle, Spare Rib Noodle",
+      "en": "Ban Mee, Dry Noodle, Spare Rib Noodle"
+    },
+    "all_menus": [
+      "Ban Mee",
+      "Dry Noodle",
+      "Spare Rib Noodle"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Pioneer Economic Rice",
+      "en": "Pioneer Economic Rice"
+    },
+    "location": {
+      "zh": "Pioneer Hall Canteen",
+      "en": "Pioneer Hall Canteen"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "3-3",
+    "avg_price": 3.3,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Pioneer Hall Canteen",
+      "en": "Local Cuisine, located at Pioneer Hall Canteen"
+    },
+    "recommended_dishes": {
+      "zh": "Sweet Sour Pork + Veggie, Stir Fried Pork + Veggie, Chicken Chop + Veggie",
+      "en": "Sweet Sour Pork + Veggie, Stir Fried Pork + Veggie, Chicken Chop + Veggie"
+    },
+    "all_menus": [
+      "Sweet Sour Pork + Veggie",
+      "Stir Fried Pork + Veggie",
+      "Chicken Chop + Veggie"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Mr Pasta",
+      "en": "Mr Pasta"
+    },
+    "location": {
+      "zh": "Pioneer Hall Canteen",
+      "en": "Pioneer Hall Canteen"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "3-3",
+    "avg_price": 3.5,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Pioneer Hall Canteen",
+      "en": "Local Cuisine, located at Pioneer Hall Canteen"
+    },
+    "recommended_dishes": {
+      "zh": "Marinara Pasata, Tom Yam Pasta, Mala Pasta",
+      "en": "Marinara Pasata, Tom Yam Pasta, Mala Pasta"
+    },
+    "all_menus": [
+      "Marinara Pasata",
+      "Tom Yam Pasta",
+      "Mala Pasta"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Ayam Penyet",
+      "en": "Ayam Penyet"
+    },
+    "location": {
+      "zh": "SARACA",
+      "en": "SARACA"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "5-6",
+    "avg_price": 6.2,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于SARACA",
+      "en": "Local Cuisine, located at SARACA"
+    },
+    "recommended_dishes": {
+      "zh": "Chicken Drumstick Set, Ayam Bakar Set, Ayam Penyet Set",
+      "en": "Chicken Drumstick Set, Ayam Bakar Set, Ayam Penyet Set"
+    },
+    "all_menus": [
+      "Ayam Bakar Set",
+      "Ayam Penyet Set",
+      "Chicken Drumstick Set"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Jappy Express",
+      "en": "Jappy Express"
+    },
+    "location": {
+      "zh": "SARACA",
+      "en": "SARACA"
+    },
+    "cuisine": {
+      "zh": "Japanese",
+      "en": "Japanese"
+    },
+    "price_range": "6-6",
+    "avg_price": 6.6,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Japanese，位于SARACA",
+      "en": "Japanese, located at SARACA"
+    },
+    "recommended_dishes": {
+      "zh": "Teriyaki Chicken Ebi Bento, Teriyaki Chicken Salmon Bento, Salmon Beef Bento",
+      "en": "Teriyaki Chicken Ebi Bento, Teriyaki Chicken Salmon Bento, Salmon Beef Bento"
+    },
+    "all_menus": [
+      "Teriyaki Chicken Ebi Bento",
+      "Teriyaki Chicken Salmon Bento",
+      "Salmon Beef Bento"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Kiso Japanese Food",
+      "en": "Kiso Japanese Food"
+    },
+    "location": {
+      "zh": "Canteen 11",
+      "en": "Canteen 11"
+    },
+    "cuisine": {
+      "zh": "Japanese",
+      "en": "Japanese"
+    },
+    "price_range": "5-7",
+    "avg_price": 6.7,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Japanese，位于Canteen 11",
+      "en": "Japanese, located at Canteen 11"
+    },
+    "recommended_dishes": {
+      "zh": "Tonkatsu Ramen, Chicken Katsu Don, Ton Special Ramen",
+      "en": "Tonkatsu Ramen, Chicken Katsu Don, Ton Special Ramen"
+    },
+    "all_menus": [
+      "Ton Special Ramen",
+      "Tonkatsu Ramen",
+      "Chicken Katsu Don"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Sichuan Cuisine",
+      "en": "Sichuan Cuisine"
+    },
+    "location": {
+      "zh": "Canteen 11",
+      "en": "Canteen 11"
+    },
+    "cuisine": {
+      "zh": "Chinese",
+      "en": "Chinese"
+    },
+    "price_range": "5-8",
+    "avg_price": 6.8,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Chinese，位于Canteen 11",
+      "en": "Chinese, located at Canteen 11"
+    },
+    "recommended_dishes": {
+      "zh": "Tomato Scrambled Egg, Sichuan Double Fried Pork, Fried Spicy Chicken Dices",
+      "en": "Tomato Scrambled Egg, Sichuan Double Fried Pork, Fried Spicy Chicken Dices"
+    },
+    "all_menus": [
+      "Sichuan Double Fried Pork",
+      "Fried Spicy Chicken Dices",
+      "Tomato Scrambled Egg"
+    ]
+  },
+  {
+    "name": {
+      "zh": "LaiLai Noodle House",
+      "en": "LaiLai Noodle House"
+    },
+    "location": {
+      "zh": "Canteen 11",
+      "en": "Canteen 11"
+    },
+    "cuisine": {
+      "zh": "Local Cuisine",
+      "en": "Local Cuisine"
+    },
+    "price_range": "4-4",
+    "avg_price": 4.2,
+    "spicy": true,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Local Cuisine，位于Canteen 11",
+      "en": "Local Cuisine, located at Canteen 11"
+    },
+    "recommended_dishes": {
+      "zh": "Ban Mian, Ee MEE, Dry Noodle",
+      "en": "Ban Mian, Ee MEE, Dry Noodle"
+    },
+    "all_menus": [
+      "Ban Mian",
+      "Ee MEE",
+      "Dry Noodle"
+    ]
+  },
+  {
+    "name": {
+      "zh": "Fruits Drinks",
+      "en": "Fruits Drinks"
+    },
+    "location": {
+      "zh": "Canteen 11",
+      "en": "Canteen 11"
+    },
+    "cuisine": {
+      "zh": "Beverages",
+      "en": "Beverages"
+    },
+    "price_range": "2-4",
+    "avg_price": 3.2,
+    "spicy": false,
+    "halal": true,
+    "vegetarian": true,
+    "description": {
+      "zh": "Beverages，位于Canteen 11",
+      "en": "Beverages, located at Canteen 11"
+    },
+    "recommended_dishes": {
+      "zh": "Watermelon Juice, Orange Juice, Avocado Smoothie",
+      "en": "Watermelon Juice, Orange Juice, Avocado Smoothie"
+    },
+    "all_menus": [
+      "Watermelon Juice",
+      "Orange Juice",
+      "Avocado Smoothie"
+    ]
+  }
+]
