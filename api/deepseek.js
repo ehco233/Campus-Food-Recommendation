@@ -1,7 +1,7 @@
 // Vercel Serverless Function for Deepseek API
 // This hides the API key from the frontend
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');

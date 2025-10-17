@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/deepseek.js",
-      "use": "@vercel/node"
+  "functions": {
+    "api/deepseek.js": {
+      "runtime": "@vercel/node@3.0.7"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/deepseek",
-      "dest": "/api/deepseek.js"
+      "dest": "/api/deepseek.js",
+      "methods": ["POST", "OPTIONS"]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
