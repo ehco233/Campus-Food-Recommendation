@@ -1,10 +1,17 @@
 {
-  "buildCommand": null,
-  "outputDirectory": ".",
-  "framework": null,
   "functions": {
     "api/deepseek.js": {
       "runtime": "nodejs18.x"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/data/:path*",
+      "destination": "/data/:path*"
+    }
+  ]
 }
