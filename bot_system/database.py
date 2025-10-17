@@ -11,13 +11,19 @@ def load_restaurants():
     """
     从JSON文件加载餐厅数据
     """
-    json_file = '../data/restaurants.json'
+    # 使用绝对路径，确保无论从哪个目录运行都能找到文件
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(current_dir)
+    json_file = os.path.join(project_root, 'data', 'restaurants.json')
     
     if os.path.exists(json_file):
         with open(json_file, 'r', encoding='utf-8') as f:
             return json.load(f)
     else:
-        print(f"⚠️  找不到 {json_file}，请先运行 python3 ../data/convert_to_json.py")
+        print(f"⚠️  找不到 {json_file}")
+        print(f"   当前脚本位置: {current_dir}")
+        print(f"   项目根目录: {project_root}")
+        print(f"   请确保文件存在: {json_file}")
         return []
 
 

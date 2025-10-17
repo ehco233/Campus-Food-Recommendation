@@ -142,12 +142,12 @@ Enjoy your meal! 🎉"""
         vegetarian_only = any(word in query_lower for word in
                              ['素食', '素菜', 'vegetarian', 'vegan'])
         
-        # 提取菜系关键词
+        # 提取菜系关键词（排除特殊筛选词，避免重复筛选）
         keyword = None
-        cuisines = ['川菜', '粤菜', '日', '韩', '面', '快餐', '清真', '西餐',
+        cuisines = ['川菜', '粤菜', '日', '韩', '面', '快餐', '西餐',
                    'sichuan', 'cantonese', 'japanese', 'korean', 'noodle', 
-                   'fast', 'halal', 'western', 'chinese', 'thai', 'asian',
-                   'vegetarian', 'beverages', 'coffee', 'tea']
+                   'fast', 'western', 'chinese', 'thai', 'asian',
+                   'beverages', 'coffee', 'tea']
         
         # 也搜索位置关键词
         locations = ['north spine', 'hive', 'canteen', 'plaza']
