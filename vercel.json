@@ -1,17 +1,10 @@
 {
+  "buildCommand": null,
+  "devCommand": null,
+  "installCommand": "echo 'No install needed for static files'",
   "functions": {
     "api/deepseek.js": {
       "runtime": "nodejs18.x"
     }
-  },
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/data/:path*",
-      "destination": "/data/:path*"
-    }
-  ]
+  }
 }
