@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Business Report System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        /* Login Section */
+        .login-section {
+            max-width: 500px;
+            margin: 60px auto;
+        }
+
+        .login-section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+
+        .login-section.hidden {
+            display: none;
+        }
+
+        /* Main Section */
+        .main-section {
+            display: none;
+        }
+
+        .main-section.active {
+            display: block;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .control-group label {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .control-group select,
+        .control-group input {
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+
+        .control-group select:focus,
+        .control-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .logout-btn {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #dc3545;
+            padding: 10px 20px;
+            font-size: 0.9em;
+            width: auto;
+        }
+
+        .restaurant-info {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .restaurant-info h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+
+        .restaurant-info p {
+            color: #555;
+            margin: 8px 0;
+            font-size: 1.05em;
+        }
+
+        .restaurant-info strong {
+            color: #333;
+        }
+
+        .period-selector {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .report-section {
+            margin-top: 30px;
+            display: none;
+        }
+
+        .report-section.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #333;
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-card .label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .data-table tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+            transition: background 0.3s;
+        }
+
+        .data-table tbody tr:hover {
+            background: #f5f5f5;
+        }
+
+        .ai-report {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 20px 0;
+            line-height: 1.9;
+            font-size: 1.05em;
+        }
+
+        .ai-report h3 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: 700;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        .ai-report h4 {
+            color: #764ba2;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .ai-report p {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .ai-report ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+            list-style-type: disc;
+        }
+
+        .ai-report li {
+            margin-bottom: 10px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .ai-report strong {
+            color: #764ba2;
+            font-weight: 700;
+        }
+
+        .ai-report em {
+            font-style: italic;
+            color: #555;
+        }
+
+        .ai-report code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.95em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        .loading::after {
+            content: '...';
+            animation: dots 1.5s infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+
+        .period-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 15px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍽️ Restaurant Business Report</h1>
+            <p>AI-Powered Analytics System</p>
+        </div>
+
+        <!-- Login Section -->
+        <div class="content login-section" id="loginSection">
+            <h2>🔐 Restaurant Login</h2>
+            <div class="control-group">
+                <label for="loginRestaurant">Select Restaurant</label>
+                <select id="loginRestaurant">
+                    <option value="">Please select a restaurant...</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password (default: 111)">
+            </div>
+            <button class="btn" onclick="login()">
+                🚀 Login to Dashboard
+            </button>
+        </div>
+
+        <!-- Main Section (shown after login) -->
+        <div class="content main-section" id="mainSection">
+            <div class="header" style="padding: 0; background: none;">
+                <button class="logout-btn" onclick="logout()">
+                    🚪 Logout
+                </button>
+            </div>
+            
+            <div class="restaurant-info" id="restaurantInfo">
+                <!-- Restaurant info will be displayed here -->
+            </div>
+
+            <h3 style="color: #667eea; margin-bottom: 20px;">📅 Select Reporting Period</h3>
+            <div class="period-selector">
+                <div class="control-group" style="margin-bottom: 0;">
+                    <label for="month">Month</label>
+                    <select id="month">
+                        <option value="jan">January 2025</option>
+                        <option value="feb">February 2025</option>
+                        <option value="mar">March 2025</option>
+                        <option value="apr">April 2025</option>
+                        <option value="may">May 2025</option>
+                        <option value="jun">June 2025</option>
+                        <option value="jul">July 2025</option>
+                        <option value="aug">August 2025</option>
+                        <option value="sep">September 2025</option>
+                        <option value="oct" selected>October 2025</option>
+                        <option value="nov">November 2025</option>
+                        <option value="dec">December 2025</option>
+                    </select>
+                </div>
+                <div class="control-group" style="margin-bottom: 0;">
+                    <label for="week">Week</label>
+                    <select id="week">
+                        <option value="1">Week 1 (1-7)</option>
+                        <option value="2">Week 2 (8-14)</option>
+                        <option value="3">Week 3 (15-21)</option>
+                        <option value="4">Week 4 (22-28)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="btn" id="generateBtn" onclick="generateReport()">
+                📊 Generate Report
+            </button>
+
+            <div id="reportSection" class="report-section">
+                <h2 class="section-title">
+                    📊 Business Overview
+                    <span class="period-badge" id="periodBadge"></span>
+                </h2>
+                
+                <div class="stats-grid" id="statsGrid">
+                    <!-- Stats will be inserted here -->
+                </div>
+
+                <h3 class="section-title">📈 Sales Data</h3>
+                <table class="data-table" id="salesTable">
+                    <thead>
+                        <tr>
+                            <th>Dish Name</th>
+                            <th>This Week</th>
+                            <th>Last Week</th>
+                            <th>Growth Rate</th>
+                            <th>Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody id="salesTableBody">
+                        <!-- Data will be inserted here -->
+                    </tbody>
+                </table>
+
+                <h3 class="section-title">🤖 AI Strategic Analysis</h3>
+                <div id="aiReport" class="ai-report">
+                    <div class="loading">Generating AI analysis report</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let restaurantsData = null;
+        let currentRestaurant = null;
+        const DEFAULT_PASSWORD = "111";
+        // API Key is now securely stored on the server (not exposed in frontend)
+
+        const MONTH_NAMES = {
+            'jan': 'January 2025',
+            'feb': 'February 2025',
+            'mar': 'March 2025',
+            'apr': 'April 2025',
+            'may': 'May 2025',
+            'jun': 'June 2025',
+            'jul': 'July 2025',
+            'aug': 'August 2025',
+            'sep': 'September 2025',
+            'oct': 'October 2025',
+            'nov': 'November 2025',
+            'dec': 'December 2025'
+        };
+
+        // Load restaurants data
+        async function loadRestaurants() {
+            try {
+                const response = await fetch('/data/restaurants.json');
+                restaurantsData = await response.json();
+                populateRestaurantSelect();
+            } catch (error) {
+                console.error('Error loading restaurants:', error);
+                alert('Error loading restaurant data. Please make sure you are running this from a local server.\n\nTo start a server, run:\npython3 -m http.server 8000\n\nThen visit: http://localhost:8000/Vendor/business_report.html');
+            }
+        }
+
+        function populateRestaurantSelect() {
+            const loginSelect = document.getElementById('loginRestaurant');
+            loginSelect.innerHTML = '<option value="">Please select a restaurant...</option>';
+            
+            if (restaurantsData) {
+                restaurantsData.forEach((restaurant, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = `${restaurant.name.en}`;
+                    loginSelect.appendChild(option);
+                });
+            }
+        }
+
+        function login() {
+            const restaurantIndex = document.getElementById('loginRestaurant').value;
+            const password = document.getElementById('password').value;
+
+            if (!restaurantIndex) {
+                alert('Please select a restaurant!');
+                return;
+            }
+
+            if (!password) {
+                alert('Please enter password!');
+                return;
+            }
+
+            if (password !== DEFAULT_PASSWORD) {
+                alert('Incorrect password! Default password is: 111');
+                return;
+            }
+
+            currentRestaurant = restaurantsData[restaurantIndex];
+            showMainSection();
+        }
+
+        function showMainSection() {
+            document.getElementById('loginSection').classList.add('hidden');
+            document.getElementById('mainSection').classList.add('active');
+            
+            const infoDiv = document.getElementById('restaurantInfo');
+            infoDiv.innerHTML = `
+                <h3>📍 ${currentRestaurant.name.en}</h3>
+                <p><strong>Location:</strong> ${currentRestaurant.location?.en || 'N/A'}</p>
+                <p><strong>Cuisine:</strong> ${currentRestaurant.cuisine.en}</p>
+                <p><strong>Average Price:</strong> $${currentRestaurant.avg_price}</p>
+                ${currentRestaurant.halal ? '<p><strong>✓</strong> Halal Certified</p>' : ''}
+                ${currentRestaurant.vegetarian ? '<p><strong>✓</strong> Vegetarian Options</p>' : ''}
+            `;
+        }
+
+        function logout() {
+            currentRestaurant = null;
+            document.getElementById('loginSection').classList.remove('hidden');
+            document.getElementById('mainSection').classList.remove('active');
+            document.getElementById('reportSection').classList.remove('active');
+            document.getElementById('password').value = '';
+        }
+
+        function generateSalesData(restaurant) {
+            const dishes = restaurant.all_menus || [restaurant.recommended_dishes.en];
+            const basePrice = restaurant.avg_price || 10;
+            
+            return dishes.slice(0, 5).map(dish => {
+                const currentWeekSales = Math.floor(Math.random() * 100) + 50;
+                const lastWeekSales = Math.floor(Math.random() * 100) + 50;
+                const growth = ((currentWeekSales - lastWeekSales) / lastWeekSales * 100).toFixed(1);
+                const revenue = (currentWeekSales * basePrice * (0.8 + Math.random() * 0.4)).toFixed(2);
+                
+                return {
+                    dish: dish,
+                    currentWeekSales: currentWeekSales,
+                    lastWeekSales: lastWeekSales,
+                    growth: growth,
+                    revenue: revenue
+                };
+            });
+        }
+
+        function displaySalesData(salesData) {
+            const totalSales = salesData.reduce((sum, item) => sum + item.currentWeekSales, 0);
+            const totalRevenue = salesData.reduce((sum, item) => sum + parseFloat(item.revenue), 0);
+            const avgGrowth = (salesData.reduce((sum, item) => sum + parseFloat(item.growth), 0) / salesData.length).toFixed(1);
+            const topDish = salesData.reduce((max, item) => item.currentWeekSales > max.currentWeekSales ? item : max);
+
+            const statsGrid = document.getElementById('statsGrid');
+            statsGrid.innerHTML = `
+                <div class="stat-card">
+                    <div class="label">Total Sales</div>
+                    <div class="value">${totalSales}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Total Revenue</div>
+                    <div class="value">$${totalRevenue.toFixed(0)}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Avg Growth</div>
+                    <div class="value">${avgGrowth}%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Top Seller</div>
+                    <div class="value" style="font-size: 1.2em;">${topDish.dish.substring(0, 15)}...</div>
+                </div>
+            `;
+
+            const tableBody = document.getElementById('salesTableBody');
+            tableBody.innerHTML = salesData.map(item => `
+                <tr>
+                    <td><strong>${item.dish}</strong></td>
+                    <td>${item.currentWeekSales}</td>
+                    <td>${item.lastWeekSales}</td>
+                    <td style="color: ${parseFloat(item.growth) >= 0 ? '#2ecc71' : '#e74c3c'}; font-weight: bold;">
+                        ${item.growth}%
+                    </td>
+                    <td>$${item.revenue}</td>
+                </tr>
+            `).join('');
+
+            return { totalSales, totalRevenue, avgGrowth, topDish, salesData };
+        }
+
+        function parseMarkdown(text) {
+            // Convert Markdown to HTML (keep the formatting)
+            
+            // Convert headers
+            text = text.replace(/^### (.+)$/gm, '<h4>$1</h4>');
+            text = text.replace(/^## (.+)$/gm, '<h3>$1</h3>');
+            text = text.replace(/^# (.+)$/gm, '<h3>$1</h3>');
+            
+            // Convert numbered section headers like "**1. Title**"
+            text = text.replace(/^\*\*(\d+\.\s+[^\*]+)\*\*$/gm, '<h4>$1</h4>');
+            
+            // Convert bold **text**
+            text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+            text = text.replace(/__(.+?)__/g, '<strong>$1</strong>');
+            
+            // Convert italic *text*
+            text = text.replace(/\*(.+?)\*(?!\*)/g, '<em>$1</em>');
+            text = text.replace(/_(.+?)_(?!_)/g, '<em>$1</em>');
+            
+            // Convert bullet lists
+            text = text.replace(/^\- (.+)$/gm, '<li>$1</li>');
+            text = text.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+            
+            // Convert inline code
+            text = text.replace(/`(.+?)`/g, '<code>$1</code>');
+            
+            // Convert links [text](url)
+            text = text.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank">$1</a>');
+            
+            return text.trim();
+        }
+
+        async function generateAIReport(restaurant, period, stats) {
+            const salesDataText = stats.salesData.map(item => 
+                `- ${item.dish}: This week ${item.currentWeekSales} units, Last week ${item.lastWeekSales} units, Growth ${item.growth}%, Revenue $${item.revenue}`
+            ).join('\n');
+
+            const prompt = `You are a professional restaurant industry analyst. Analyze the business data and provide a comprehensive report.
+
+Restaurant: ${restaurant.name.en}
+Location: ${restaurant.location?.en || 'N/A'}
+Cuisine: ${restaurant.cuisine.en}
+Period: ${period}
+
+Sales Data:
+${salesDataText}
+
+Summary:
+- Total Sales: ${stats.totalSales} units
+- Total Revenue: $${stats.totalRevenue.toFixed(2)}
+- Average Growth: ${stats.avgGrowth}%
+- Best Seller: ${stats.topDish.dish}
+
+Provide a detailed analysis with these sections (use Markdown formatting):
+
+## 1. Sales Performance Summary
+Brief overview of this period's performance.
+
+## 2. Dish Performance Analysis
+- **Top Performers**: Which dishes performed well and why
+- **Underperformers**: Which dishes need attention and reasons
+
+## 3. Strategic Recommendations
+- **Inventory**: What to stock more/less
+- **Menu**: Any menu changes to consider
+- **Marketing**: Promotional ideas
+- **Pricing**: Any pricing adjustments
+
+## 4. Next Period Forecast
+Predictions and action items for next week.
+
+Use Markdown formatting (**, ##, -) for structure. Make key points **bold**.`;
+
+            try {
+                // Call our own API endpoint (which securely handles the Deepseek API)
+                const response = await fetch('/api/deepseek', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        messages: [
+                            { role: 'system', content: 'You are a professional restaurant industry analyst.' },
+                            { role: 'user', content: prompt }
+                        ],
+                        temperature: 0.7,
+                        max_tokens: 2000
+                    })
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.message || `API request failed: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                return data.choices[0].message.content;
+            } catch (error) {
+                console.error('AI report failed:', error);
+                return `❌ AI analysis failed: ${error.message}`;
+            }
+        }
+
+        async function generateReport() {
+            if (!currentRestaurant) {
+                alert('Please login first!');
+                return;
+            }
+
+            const month = document.getElementById('month').value;
+            const week = document.getElementById('week').value;
+            const monthName = MONTH_NAMES[month];
+            const weekText = document.getElementById('week').options[document.getElementById('week').selectedIndex].text;
+            const period = `${monthName} - ${weekText}`;
+
+            const generateBtn = document.getElementById('generateBtn');
+            const reportSection = document.getElementById('reportSection');
+            reportSection.classList.add('active');
+
+            document.getElementById('periodBadge').textContent = period;
+
+            generateBtn.disabled = true;
+            generateBtn.textContent = '⏳ Generating...';
+
+            const salesData = generateSalesData(currentRestaurant);
+            const stats = displaySalesData(salesData);
+
+            const aiReportDiv = document.getElementById('aiReport');
+            aiReportDiv.innerHTML = '<div class="loading">Generating AI analysis report</div>';
+
+            const aiReport = await generateAIReport(currentRestaurant, period, stats);
+            
+            // Parse markdown to HTML
+            let parsedReport = parseMarkdown(aiReport);
+            
+            // Format for HTML display
+            let formattedReport = parsedReport
+                .split('\n\n')
+                .map(block => {
+                    block = block.trim();
+                    // Don't wrap headers or lists in <p>
+                    if (block.startsWith('<h3>') || block.startsWith('<h4>') || 
+                        block.startsWith('<ul>') || block.includes('</ul>')) {
+                        return block;
+                    }
+                    return `<p>${block.replace(/\n/g, '<br>')}</p>`;
+                })
+                .join('');
+            
+            aiReportDiv.innerHTML = formattedReport;
+
+            generateBtn.disabled = false;
+            generateBtn.textContent = '🔄 Regenerate Report';
+
+            reportSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            loadRestaurants();
+        });
+    </script>
+</body>
+</html>
