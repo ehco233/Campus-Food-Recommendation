@@ -33,40 +33,46 @@ cd Vendor
 
 ```
 GP8000/
-├── README.md                    # 本文件
-├── requirements.txt             # Python 依赖
-├── vercel.json                  # Vercel 配置
+├── index.html                   # 🌐 网站首页（商家报告系统）
+├── package.json                 # 📦 Node.js 配置（Vercel 部署必需）
+├── vercel.json                  # ⚙️  Vercel 配置文件
+├── requirements.txt             # 🐍 Python 依赖
+├── README.md                    # 📖 本文件
+├── .gitignore                   # 🔒 Git 忽略规则
+├── .vercelignore                # 🔒 Vercel 忽略规则
 │
-├── 📚 docs/                     # 所有文档
-│   ├── README.md                # 项目总览（中文版）
-│   ├── FEATURES.md              # 功能说明（中文）
-│   ├── FEATURES_EN.md           # 功能说明（英文）
-│   ├── SYSTEM_GUIDE.md          # 使用指南
-│   ├── DEPLOYMENT_GUIDE.md      # 详细部署教程
-│   ├── QUICK_DEPLOY.md          # 快速部署（5分钟）
-│   ├── PROJECT_STRUCTURE.md     # 项目结构说明
-│   └── UPDATE_LOG.md            # 更新日志
+├── 📚 docs/                     # 文档目录
+│   ├── README.md                # 文档索引
+│   ├── FEATURES.md              # 功能说明（中文）⭐
+│   └── FEATURES_EN.md           # 功能说明（英文）⭐
 │
 ├── 🤖 bot_system/               # Telegram Bot 系统
 │   ├── bot.py                   # 机器人主程序
 │   ├── database.py              # 数据库接口
 │   ├── llm_service.py           # AI 服务
-│   ├── config.py                # 配置（API Keys）
-│   └── START_BOT.sh             # 启动脚本
+│   ├── config.py                # 配置（API Keys）⚠️
+│   ├── START_BOT.sh             # 启动脚本
+│   └── README.md                # Bot 系统说明
 │
-├── 📊 Vendor/                   # 商家报告系统（前端）
+├── 📊 Vendor/                   # 商家报告系统（备用）
 │   ├── business_report.html     # 报告页面
-│   ├── start_report_server.sh   # 启动脚本
+│   ├── start_report_server.sh   # 本地启动脚本
 │   └── README.md                # 说明文档
 │
-├── ⚙️  api/                     # 后端 API（Serverless）
-│   └── deepseek.js              # Deepseek API 代理
+├── ⚙️  api/                     # Serverless Functions
+│   └── deepseek.js              # Deepseek API 代理（隐藏 API Key）
 │
 └── 📦 data/                     # 数据文件
-    ├── restaurants.json         # 58家餐厅数据
-    ├── AI Course Data Collection 2.xlsx
-    └── convert_to_json.py       # Excel 转 JSON 工具
+    ├── restaurants.json         # 58家餐厅数据（主数据源）
+    ├── AI Course Data Collection 2.xlsx # 原始 Excel 数据
+    ├── convert_to_json.py       # Excel → JSON 转换工具
+    └── README.md                # 数据说明文档
 ```
+
+**注意**: 
+- `index.html` 在根目录，作为网站首页直接显示商家报告系统
+- `config.py` 包含 API Keys，已被 `.gitignore` 保护
+- `package.json` 是 Vercel 部署的关键文件
 
 ---
 
