@@ -140,6 +140,111 @@ GP8000/
 
 ---
 
+## 📊 系统架构与代码流程
+
+### RAG (检索增强生成) - 工作原理
+
+**什么是 RAG？**  
+把 RAG 想象成一个"聪明的图书管理员 + 作家"组合：
+- 📚 **图书管理员（检索）**：先找到相关的书籍（餐厅数据）
+- ✍️ **作家（生成）**：然后用这些书籍写出个性化的答案
+
+**为什么需要 RAG？**  
+没有 RAG，AI 可能会"胡编乱造"——推荐不存在的餐厅或价格错误。  
+有了 RAG，AI 只从**真实、筛选过的数据**中推荐 = 准确可靠！✅
+
+---
+
+```mermaid
+flowchart TD
+    Start[👤 用户提问:<br/>'我要10块钱以内的清真餐厅'] --> Step1[🔍 第1步：理解需求<br/>用户想要：<br/>• 预算：10块<br/>• 饮食：清真]
+    
+    Step1 --> Step2[📚 第2步：搜索数据库<br/>在系统中的58家<br/>餐厅里查找]
+    
+    Step2 --> Step3[🔎 第3步：筛选结果<br/>找到符合条件的餐厅：<br/>✓ 价格 ≤ 10块<br/>✓ 清真认证<br/>→ 找到5家餐厅！]
+    
+    Step3 --> Step4[📝 第4步：准备信息<br/>收集每家餐厅的：<br/>• 餐厅名称和位置<br/>• 准确价格<br/>• 热门菜品<br/>• 排队时间]
+    
+    Step4 --> Step5[🤖 第5步：请 AI 帮忙<br/>把这5家餐厅的信息<br/>给 AI，让它写一个<br/>友好的推荐]
+    
+    Step5 --> Step6[💬 第6步：AI 撰写回复<br/>'推荐您去 North Spine Plaza<br/>的 The Crowded Bowl，提供<br/>清真食品，价格5-8块。试试<br/>他们的椰浆饭！只需排队5分钟']
+    
+    Step6 --> Send[📱 发送给用户]
+    
+    style Start fill:#e3f2fd
+    style Step3 fill:#c8e6c9
+    style Step4 fill:#fff9c4
+    style Step5 fill:#f8bbd0
+    style Step6 fill:#f3e5f5
+    style Send fill:#c8e6c9
+```
+
+**RAG 的神奇之处，3步搞定：**
+
+1️⃣ **找（检索）**  
+   用户说："10块钱以内的清真餐厅"  
+   系统搜索：58家餐厅 → 筛选 → 找到5家匹配
+
+2️⃣ **给（上下文）**  
+   系统把这5家真实餐厅的所有详细信息给 AI
+
+3️⃣ **写（生成）**  
+   AI 用这5家餐厅的信息，写出自然、友好的推荐
+
+**结果：** 准确、个性化、值得信赖的推荐！🎯
+
+---
+
+**为什么这很重要？**
+
+| 没有 RAG ❌ | 有了 RAG ✅ |
+|------------|------------|
+| AI 可能推荐"ABC餐厅"，但根本不存在 | AI 只从58家真实餐厅中推荐 |
+| 价格可能错："5块"，但实际是15块 | 数据库中的准确价格："5-8块" |
+| 说"不辣"，但其实很辣 | 根据实际标准筛选 |
+| 千篇一律的回答 | 根据您的需求个性化定制 |
+
+---
+
+### 整体系统架构
+
+```mermaid
+graph LR
+    subgraph Consumer["🤖 消费者端 - Telegram Bot"]
+        U1[用户查询] --> B1[bot.py]
+        B1 --> D1[database.py]
+        D1 --> L1[llm_service.py]
+        L1 --> T1[Telegram 响应]
+    end
+
+    subgraph Merchant["📊 商家端 - 营业报告"]
+        U2[浏览器] --> H1[index.html]
+        H1 --> A1[api/deepseek.js]
+        A1 --> R1[报告展示]
+    end
+
+    subgraph Data["📦 共享数据层"]
+        E1[Excel] --> C1[convert_to_json.py]
+        C1 --> J1[(restaurants.json<br/>58家餐厅)]
+    end
+
+    subgraph AI["🧠 AI 服务"]
+        DS[Deepseek API]
+    end
+
+    D1 <--> J1
+    H1 <--> J1
+    L1 <--> DS
+    A1 <--> DS
+
+    style Consumer fill:#e3f2fd
+    style Merchant fill:#fff3e0
+    style Data fill:#e8f5e9
+    style AI fill:#f3e5f5
+```
+
+---
+
 ## 📦 安装依赖
 
 ```bash
