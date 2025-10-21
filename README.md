@@ -1,175 +1,176 @@
-# 🎯 GP8000 - 智能餐厅推荐与商家报告系统
+# 🎯 GP8000 - Smart Restaurant Recommendation & Business Report System
 
-本项目包含两个独立的智能系统，分别服务于消费者和商家。
+This project contains two independent intelligent systems serving both consumers and merchants.
 
 ---
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 📱 Telegram Bot（消费者端）
+### 📱 Telegram Bot (Consumer Side)
 
 ```bash
 cd bot_system
 python3 bot.py
 ```
 
-### 📊 商家报告系统（商家端）
+### 📊 Business Report System (Merchant Side)
 
-**本地运行：**
+**Local Development:**
 ```bash
 cd Vendor
 ./start_report_server.sh
-# 访问 http://localhost:8000/Vendor/business_report.html
+# Visit http://localhost:8000/Vendor/business_report.html
 ```
 
-**部署到 Vercel：**
+**Deploy to Vercel:**
 ```bash
-# 见 docs/QUICK_DEPLOY.md
+# See docs/QUICK_DEPLOY.md
 ```
 
 ---
 
-## 📂 项目结构
+## 📂 Project Structure
 
 ```
 GP8000/
-├── index.html                   # 🌐 网站首页（商家报告系统）
-├── package.json                 # 📦 Node.js 配置（Vercel 部署必需）
-├── vercel.json                  # ⚙️  Vercel 配置文件
-├── requirements.txt             # 🐍 Python 依赖
-├── README.md                    # 📖 本文件
-├── .gitignore                   # 🔒 Git 忽略规则
-├── .vercelignore                # 🔒 Vercel 忽略规则
+├── index.html                   # 🌐 Website Homepage (Business Report System)
+├── package.json                 # 📦 Node.js Config (Required for Vercel)
+├── vercel.json                  # ⚙️  Vercel Configuration
+├── requirements.txt             # 🐍 Python Dependencies
+├── README.md                    # 📖 Chinese Version
+├── README_EN.md                 # 📖 This File (English Version)
+├── .gitignore                   # 🔒 Git Ignore Rules
+├── .vercelignore                # 🔒 Vercel Ignore Rules
 │
-├── 📚 docs/                     # 文档目录
-│   ├── README.md                # 文档索引
-│   ├── FEATURES.md              # 功能说明（中文）⭐
-│   └── FEATURES_EN.md           # 功能说明（英文）⭐
+├── 📚 docs/                     # Documentation Directory
+│   ├── FEATURES.md              # Feature Documentation (Chinese) ⭐
+│   └── FEATURES_EN.md           # Feature Documentation (English) ⭐
 │
-├── 🤖 bot_system/               # Telegram Bot 系统
-│   ├── bot.py                   # 机器人主程序
-│   ├── database.py              # 数据库接口
-│   ├── llm_service.py           # AI 服务
-│   ├── config.py                # 配置（API Keys）⚠️
-│   ├── START_BOT.sh             # 启动脚本
-│   └── README.md                # Bot 系统说明
+├── 🤖 bot_system/               # Telegram Bot System
+│   ├── bot.py                   # Bot Main Program
+│   ├── database.py              # Database Interface
+│   ├── llm_service.py           # AI Service
+│   ├── config.py                # Configuration (API Keys) ⚠️
+│   ├── START_BOT.sh             # Startup Script
+│   ├── README.md                # Bot System Guide (Chinese)
+│   └── README_EN.md             # Bot System Guide (English)
 │
-├── 📊 Vendor/                   # 商家报告系统（备用）
-│   ├── business_report.html     # 报告页面
-│   ├── start_report_server.sh   # 本地启动脚本
-│   └── README.md                # 说明文档
+├── 📊 Vendor/                   # Business Report System (Backup)
+│   ├── business_report.html     # Report Page
+│   ├── start_report_server.sh   # Local Startup Script
+│   ├── README.md                # Documentation (English)
+│   ├── REPORT_README.md         # Detailed Guide (Chinese)
+│   └── REPORT_README_EN.md      # Detailed Guide (English)
 │
 ├── ⚙️  api/                     # Serverless Functions
-│   └── deepseek.js              # Deepseek API 代理（隐藏 API Key）
+│   └── deepseek.js              # Deepseek API Proxy (Hides API Key)
 │
-└── 📦 data/                     # 数据文件
-    ├── restaurants.json         # 58家餐厅数据（主数据源）
-    ├── AI Course Data Collection 2.xlsx # 原始 Excel 数据
-    ├── convert_to_json.py       # Excel → JSON 转换工具
-    └── README.md                # 数据说明文档
+└── 📦 data/                     # Data Files
+    ├── restaurants.json         # 58 Restaurant Data (Main Data Source)
+    ├── AI Course Data Collection 2.xlsx # Raw Excel Data
+    ├── convert_to_json.py       # Excel → JSON Converter
+    ├── README.md                # Data Documentation (Chinese)
+    └── README_EN.md             # Data Documentation (English)
 ```
 
-**注意**: 
-- `index.html` 在根目录，作为网站首页直接显示商家报告系统
-- `config.py` 包含 API Keys，已被 `.gitignore` 保护
-- `package.json` 是 Vercel 部署的关键文件
+**Note**: 
+- `index.html` is in the root directory as the website homepage, directly displaying the business report system
+- `config.py` contains API Keys, protected by `.gitignore`
+- `package.json` is essential for Vercel deployment
 
 ---
 
-## 📖 文档导航
+## 📖 Documentation Navigator
 
-| 文档 | 用途 | 推荐度 |
-|------|------|--------|
-| [FEATURES.md](docs/FEATURES.md) | 详细功能说明（中文） | ⭐⭐⭐⭐⭐ |
-| [FEATURES_EN.md](docs/FEATURES_EN.md) | 详细功能说明（英文） | ⭐⭐⭐⭐⭐ |
-| [QUICK_DEPLOY.md](docs/QUICK_DEPLOY.md) | 5分钟快速部署 | ⭐⭐⭐⭐⭐ |
-| [SYSTEM_GUIDE.md](docs/SYSTEM_GUIDE.md) | 完整使用指南 | ⭐⭐⭐⭐ |
-| [DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md) | 详细部署方案 | ⭐⭐⭐⭐ |
-| [PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) | 项目结构说明 | ⭐⭐⭐ |
+| Document | Purpose | Priority |
+|----------|---------|----------|
+| [FEATURES.md](docs/FEATURES.md) | Detailed Features (Chinese) | ⭐⭐⭐⭐⭐ |
+| [FEATURES_EN.md](docs/FEATURES_EN.md) | Detailed Features (English) | ⭐⭐⭐⭐⭐ |
+| [README_EN.md](README_EN.md) | This File | ⭐⭐⭐⭐⭐ |
 
 ---
 
-## 🎯 两大系统
+## 🎯 Two Systems
 
-### 🤖 系统1：Telegram 餐厅推荐机器人
+### 🤖 System 1: Telegram Restaurant Recommendation Bot
 
-**目标用户**：学生、教职工、访客
+**Target Users**: Students, Faculty, Visitors
 
-**核心功能**：
-- ✅ 智能餐厅推荐（AI 驱动）
-- ✅ 中英文双语支持
-- ✅ 多维度筛选（价格、菜系、Halal、素食）
-- ✅ 实时排队时间
-- ✅ 基于58家餐厅数据
+**Core Features**:
+- ✅ Smart Restaurant Recommendations (AI-Powered)
+- ✅ Bilingual Support (Chinese & English)
+- ✅ Multi-Dimensional Filtering (Price, Cuisine, Halal, Vegetarian)
+- ✅ Real-Time Queue Time
+- ✅ Based on 58 Restaurant Database
 
-**查询示例**：
+**Query Examples**:
 ```
 "I want halal food under 10 dollars"
 "推荐不辣的餐厅，预算15块"
 ```
 
-### 📊 系统2：商家营业报告系统
+### 📊 System 2: Business Report System
 
-**目标用户**：餐厅老板、经理、管理者
+**Target Users**: Restaurant Owners, Managers
 
-**核心功能**：
-- ✅ 密码保护登录
-- ✅ 周期报告生成（按月/周）
-- ✅ 销售数据可视化
-- ✅ AI 战略分析
-- ✅ Markdown 格式报告
+**Core Features**:
+- ✅ Password-Protected Login
+- ✅ Periodic Report Generation (By Month/Week)
+- ✅ Sales Data Visualization
+- ✅ AI Strategic Analysis
+- ✅ Markdown Format Reports
 
-**特点**：
-- 2025年全年数据
-- 实时数据刷新
-- 专业商业报告
-- 安全部署（API Key 隐藏）
-
----
-
-## 💻 技术栈
-
-| 组件 | 技术 |
-|------|------|
-| **Bot 后端** | Python 3.10+, python-telegram-bot |
-| **AI 服务** | Deepseek API |
-| **数据处理** | Pandas, JSON |
-| **前端** | HTML5, CSS3, JavaScript |
-| **后端 API** | Vercel Serverless Functions |
-| **部署** | Vercel (推荐), GitHub Pages |
+**Highlights**:
+- Full Year 2025 Data
+- Real-Time Data Refresh
+- Professional Business Reports
+- Secure Deployment (API Key Hidden)
 
 ---
 
-## 📊 系统架构与代码流程
+## 💻 Tech Stack
 
-### RAG (检索增强生成) - 工作原理
+| Component | Technology |
+|-----------|------------|
+| **Bot Backend** | Python 3.10+, python-telegram-bot |
+| **AI Service** | Deepseek API |
+| **Data Processing** | Pandas, JSON |
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Backend API** | Vercel Serverless Functions |
+| **Deployment** | Vercel (Recommended), GitHub Pages |
 
-**什么是 RAG？**  
-把 RAG 想象成一个"聪明的图书管理员 + 作家"组合：
-- 📚 **图书管理员（检索）**：先找到相关的书籍（餐厅数据）
-- ✍️ **作家（生成）**：然后用这些书籍写出个性化的答案
+---
 
-**为什么需要 RAG？**  
-没有 RAG，AI 可能会"胡编乱造"——推荐不存在的餐厅或价格错误。  
-有了 RAG，AI 只从**真实、筛选过的数据**中推荐 = 准确可靠！✅
+## 📊 System Architecture & Code Flow
+
+### RAG (Retrieval-Augmented Generation) - How It Works
+
+**What is RAG?**  
+Think of RAG as a smart librarian + writer combo:
+- 📚 **Librarian (Retrieval)**: First, find relevant books (restaurant data)
+- ✍️ **Writer (Generation)**: Then, write a personalized answer using those books
+
+**Why RAG?**  
+Without RAG, AI might "hallucinate" - recommend restaurants that don't exist or get prices wrong.  
+With RAG, AI only recommends from **real, filtered data** = accurate & reliable! ✅
 
 ---
 
 ```mermaid
 flowchart TD
-    Start[👤 用户提问:<br/>'我要10块钱以内的清真餐厅'] --> Step1[🔍 第1步：理解需求<br/>用户想要：<br/>• 预算：10块<br/>• 饮食：清真]
+    Start[👤 User asks:<br/>'I want halal food under $10'] --> Step1[🔍 Step 1: Understand<br/>What user wants:<br/>• Budget: $10<br/>• Dietary: Halal]
     
-    Step1 --> Step2[📚 第2步：搜索数据库<br/>在系统中的58家<br/>餐厅里查找]
+    Step1 --> Step2[📚 Step 2: Search Database<br/>Look through 58 restaurants<br/>in our system]
     
-    Step2 --> Step3[🔎 第3步：筛选结果<br/>找到符合条件的餐厅：<br/>✓ 价格 ≤ 10块<br/>✓ 清真认证<br/>→ 找到5家餐厅！]
+    Step2 --> Step3[🔎 Step 3: Filter Results<br/>Find matching restaurants:<br/>✓ Price ≤ $10<br/>✓ Halal certified<br/>→ Found 5 restaurants!]
     
-    Step3 --> Step4[📝 第4步：准备信息<br/>收集每家餐厅的：<br/>• 餐厅名称和位置<br/>• 准确价格<br/>• 热门菜品<br/>• 排队时间]
+    Step3 --> Step4[📝 Step 4: Prepare Information<br/>Collect details for each:<br/>• Restaurant name & location<br/>• Exact prices<br/>• Popular dishes<br/>• Queue time]
     
-    Step4 --> Step5[🤖 第5步：请 AI 帮忙<br/>把这5家餐厅的信息<br/>给 AI，让它写一个<br/>友好的推荐]
+    Step4 --> Step5[🤖 Step 5: Ask AI to Help<br/>Give AI the 5 restaurants<br/>and ask it to write a<br/>friendly recommendation]
     
-    Step5 --> Step6[💬 第6步：AI 撰写回复<br/>'推荐您去 North Spine Plaza<br/>的 The Crowded Bowl，提供<br/>清真食品，价格5-8块。试试<br/>他们的椰浆饭！只需排队5分钟']
+    Step5 --> Step6[💬 Step 6: AI Writes Response<br/>'I recommend The Crowded Bowl<br/>at North Spine Plaza. It serves<br/>halal food for $5-8. Try their<br/>Nasi Lemak! Only 5 min wait.']
     
-    Step6 --> Send[📱 发送给用户]
+    Step6 --> Send[📱 Send to User]
     
     style Start fill:#e3f2fd
     style Step3 fill:#c8e6c9
@@ -179,56 +180,56 @@ flowchart TD
     style Send fill:#c8e6c9
 ```
 
-**RAG 的神奇之处，3步搞定：**
+**The Magic of RAG in 3 Simple Steps:**
 
-1️⃣ **找（检索）**  
-   用户说："10块钱以内的清真餐厅"  
-   系统搜索：58家餐厅 → 筛选 → 找到5家匹配
+1️⃣ **FIND** (Retrieval)  
+   User says: "halal food under $10"  
+   System searches: 58 restaurants → filters → finds 5 matches
 
-2️⃣ **给（上下文）**  
-   系统把这5家真实餐厅的所有详细信息给 AI
+2️⃣ **GIVE** (Context)  
+   System gives AI these 5 real restaurants with all their details
 
-3️⃣ **写（生成）**  
-   AI 用这5家餐厅的信息，写出自然、友好的推荐
+3️⃣ **WRITE** (Generation)  
+   AI writes a natural, friendly recommendation using ONLY those 5 restaurants
 
-**结果：** 准确、个性化、值得信赖的推荐！🎯
-
----
-
-**为什么这很重要？**
-
-| 没有 RAG ❌ | 有了 RAG ✅ |
-|------------|------------|
-| AI 可能推荐"ABC餐厅"，但根本不存在 | AI 只从58家真实餐厅中推荐 |
-| 价格可能错："5块"，但实际是15块 | 数据库中的准确价格："5-8块" |
-| 说"不辣"，但其实很辣 | 根据实际标准筛选 |
-| 千篇一律的回答 | 根据您的需求个性化定制 |
+**Result:** Accurate, personalized, trustworthy recommendations! 🎯
 
 ---
 
-### 整体系统架构
+**Why This Matters:**
+
+| Without RAG ❌ | With RAG ✅ |
+|----------------|-------------|
+| AI might recommend "ABC Restaurant" that doesn't exist | AI only recommends from 58 real restaurants |
+| Price might be wrong: "$5" but actually $15 | Exact prices from database: "$5-8" |
+| "Not spicy" but actually very spicy | Filtered by actual criteria |
+| Generic answer for everyone | Personalized based on YOUR requirements |
+
+---
+
+### Overall System Architecture
 
 ```mermaid
 graph LR
-    subgraph Consumer["🤖 消费者端 - Telegram Bot"]
-        U1[用户查询] --> B1[bot.py]
+    subgraph Consumer["🤖 Consumer Side - Telegram Bot"]
+        U1[User Query] --> B1[bot.py]
         B1 --> D1[database.py]
         D1 --> L1[llm_service.py]
-        L1 --> T1[Telegram 响应]
+        L1 --> T1[Telegram Response]
     end
 
-    subgraph Merchant["📊 商家端 - 营业报告"]
-        U2[浏览器] --> H1[index.html]
+    subgraph Merchant["📊 Merchant Side - Business Report"]
+        U2[Browser] --> H1[index.html]
         H1 --> A1[api/deepseek.js]
-        A1 --> R1[报告展示]
+        A1 --> R1[Report Display]
     end
 
-    subgraph Data["📦 共享数据层"]
+    subgraph Data["📦 Shared Data Layer"]
         E1[Excel] --> C1[convert_to_json.py]
-        C1 --> J1[(restaurants.json<br/>58家餐厅)]
+        C1 --> J1[(restaurants.json<br/>58 restaurants)]
     end
 
-    subgraph AI["🧠 AI 服务"]
+    subgraph AI["🧠 AI Service"]
         DS[Deepseek API]
     end
 
@@ -243,15 +244,149 @@ graph LR
     style AI fill:#f3e5f5
 ```
 
+### Telegram Bot Detailed Flow
+
+```mermaid
+sequenceDiagram
+    participant User as 👤 User (Telegram)
+    participant Bot as bot.py
+    participant Parser as parse_user_query()
+    participant DB as database.py
+    participant JSON as restaurants.json
+    participant LLM as llm_service.py
+    participant API as Deepseek API
+
+    User->>Bot: Send query<br/>"I want halal food under $10"
+    Bot->>Bot: detect_language()<br/>→ English
+    Bot->>Parser: Parse query
+    Parser->>Parser: Extract filters:<br/>max_price=10<br/>halal_only=True
+    Parser-->>Bot: Return filters
+    
+    Bot->>DB: search_restaurants(max_price=10, halal_only=True)
+    DB->>JSON: Load data
+    JSON-->>DB: 58 restaurants
+    DB->>DB: Filter by criteria
+    DB-->>Bot: 5 matching restaurants
+    
+    Bot->>DB: format_restaurant_data(restaurants, language='en')
+    DB-->>Bot: Formatted text with **bold**
+    
+    Bot->>LLM: generate_recommendation(query, data, language='en')
+    LLM->>API: POST chat/completions<br/>(Plain text prompt)
+    API-->>LLM: AI response
+    LLM-->>Bot: Recommendation text
+    
+    Bot->>Bot: clean_markdown()<br/>Remove ** ## symbols
+    Bot->>User: Send final message
+```
+
+### Business Report System Detailed Flow
+
+```mermaid
+sequenceDiagram
+    participant User as 🏢 Merchant
+    participant HTML as index.html
+    participant JS as JavaScript
+    participant SF as /api/deepseek.js<br/>(Serverless)
+    participant ENV as Vercel Env Vars
+    participant API as Deepseek API
+    participant JSON as restaurants.json
+
+    User->>HTML: Open website
+    HTML->>JSON: fetch('/data/restaurants.json')
+    JSON-->>HTML: 58 restaurants
+    HTML->>User: Show login form
+    
+    User->>HTML: Select restaurant + Enter password
+    HTML->>HTML: Validate password === "111"
+    HTML->>User: Show dashboard
+    
+    User->>HTML: Select month + week
+    User->>HTML: Click "Generate Report"
+    
+    HTML->>JS: generateSalesData()
+    JS->>JS: Create mock sales<br/>for 5 dishes
+    JS-->>HTML: Sales table + stats
+    
+    HTML->>SF: POST /api/deepseek<br/>{messages, temperature, max_tokens}
+    SF->>ENV: Get DEEPSEEK_API_KEY
+    ENV-->>SF: API Key
+    SF->>API: POST with Authorization header
+    API-->>SF: AI analysis response
+    SF-->>HTML: Return data
+    
+    HTML->>JS: parseMarkdown(aiReport)
+    JS->>JS: Convert ** to <strong><br/>Convert ## to <h3>
+    JS-->>HTML: HTML formatted report
+    HTML->>User: Display complete report
+```
+
+### Data Update Flow
+
+```mermaid
+flowchart LR
+    A[📄 Excel File<br/>AI Course Data Collection 2.xlsx] --> B[🐍 convert_to_json.py]
+    B --> C{Processing}
+    C --> D[Group by Stall]
+    C --> E[Calculate Prices]
+    C --> F[Generate Multilingual Fields]
+    C --> G[Handle Missing Data]
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+    H[📦 restaurants.json<br/>58 restaurants] --> I[🤖 Bot System<br/>database.py]
+    H --> J[📊 Report System<br/>index.html]
+    
+    style A fill:#fff3cd
+    style H fill:#d1ecf1
+    style I fill:#d4edda
+    style J fill:#f8d7da
+```
+
+### Key Components Interaction
+
+```mermaid
+graph LR
+    subgraph "bot_system/"
+        B1[bot.py<br/>258 lines] --> B2[database.py<br/>173 lines]
+        B1 --> B3[llm_service.py<br/>90 lines]
+        B1 --> B4[config.py<br/>API Keys]
+    end
+    
+    subgraph "data/"
+        D1[restaurants.json<br/>42KB]
+    end
+    
+    subgraph "api/"
+        A1[deepseek.js<br/>Serverless Proxy]
+    end
+    
+    subgraph "Frontend"
+        F1[index.html<br/>Business Report UI]
+    end
+    
+    B2 --> D1
+    B3 --> E1[Deepseek API]
+    F1 --> D1
+    F1 --> A1
+    A1 --> E1
+    
+    style B1 fill:#bbdefb
+    style D1 fill:#c8e6c9
+    style A1 fill:#ffccbc
+    style F1 fill:#f8bbd0
+```
+
 ---
 
-## 📦 安装依赖
+## 📦 Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-依赖包：
+Dependencies:
 - `python-telegram-bot==20.7`
 - `openai==1.12.0`
 - `pandas==2.0.3`
@@ -259,12 +394,12 @@ pip install -r requirements.txt
 
 ---
 
-## 🔑 配置
+## 🔑 Configuration
 
-创建 `bot_system/config.py`：
+Create `bot_system/config.py`:
 
 ```python
-# Telegram Bot Token (从 @BotFather 获取)
+# Telegram Bot Token (Get from @BotFather)
 TELEGRAM_BOT_TOKEN = "your_telegram_bot_token"
 
 # Deepseek API Key
@@ -273,64 +408,64 @@ DEEPSEEK_API_KEY = "your_deepseek_api_key"
 
 ---
 
-## 🚀 部署
+## 🚀 Deployment
 
-### 本地开发
+### Local Development
 
-1. **启动 Telegram Bot**：
+1. **Start Telegram Bot**:
    ```bash
    cd bot_system
    python3 bot.py
    ```
 
-2. **启动商家报告**：
+2. **Start Business Report**:
    ```bash
    cd Vendor
    python3 -m http.server 8000
    ```
 
-### 生产部署
+### Production Deployment
 
-**推荐：Vercel（免费 + 安全）**
+**Recommended: Vercel (Free + Secure)**
 
-详见：[docs/QUICK_DEPLOY.md](docs/QUICK_DEPLOY.md)
+See: [docs/FEATURES_EN.md](docs/FEATURES_EN.md)
 
 ---
 
-## 📊 数据说明
+## 📊 Data Overview
 
-- **餐厅数量**：58家
-- **菜单项目**：163个
-- **价格范围**：$1 - $30
-- **位置**：校园多个食堂和美食广场
-- **特色**：支持 Halal、Vegetarian 标注
+- **Total Restaurants**: 58
+- **Menu Items**: 163
+- **Price Range**: $1 - $30
+- **Locations**: Multiple campus canteens and food courts
+- **Features**: Halal, Vegetarian options marked
 
-### 更新数据
+### Update Data
 
 ```bash
 cd data
-# 1. 替换 AI Course Data Collection 2.xlsx
-# 2. 运行转换
+# 1. Replace Excel file
+# 2. Run conversion
 python3 convert_to_json.py
 ```
 
 ---
 
-## 🔒 安全性
+## 🔒 Security
 
-- ✅ API Key 不在前端代码中
-- ✅ 使用环境变量存储密钥
-- ✅ Serverless Functions 代理 API 调用
-- ✅ 密码保护商家报告
-- ✅ .gitignore 保护敏感文件
+- ✅ API Keys not in frontend code
+- ✅ Environment variables for secrets
+- ✅ Serverless Functions proxy API calls
+- ✅ Password-protected business reports
+- ✅ .gitignore protects sensitive files
 
 ---
 
-## 📞 支持
+## 📞 Support
 
-- 📖 查看 [docs/SYSTEM_GUIDE.md](docs/SYSTEM_GUIDE.md)
-- 🚀 快速部署 [docs/QUICK_DEPLOY.md](docs/QUICK_DEPLOY.md)
-- 📝 功能说明 [docs/FEATURES.md](docs/FEATURES.md)
+- 📖 Documentation: [docs/FEATURES_EN.md](docs/FEATURES_EN.md)
+- 🤖 Bot Guide: [bot_system/README_EN.md](bot_system/README_EN.md)
+- 📊 Report Guide: [Vendor/README.md](Vendor/README.md)
 
 ---
 
@@ -340,7 +475,7 @@ MIT License
 
 ---
 
-**最后更新**: 2025年10月17日  
-**版本**: v2.0  
-**数据版本**: 58家餐厅，163个菜单项
+**Last Updated**: October 17, 2025  
+**Version**: v2.0  
+**Data Version**: 58 Restaurants, 163 Menu Items
 
